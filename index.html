@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/main.css" />
+    <title>Coordinate Converter</title>
+</head>
+<body>
+    <main class="container">
+        <h1>UTM Zone Converter to 36N</h1>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <label for="from_zone">Convert from:</label>
+            <select name="from_zone" id="from_zone">
+                <option value="35M">35M</option>
+                <option value="35N">35N</option>
+                <option value="36M">36M</option>
+            </select>
+            <br>
+            <input type="file" name="file" id="fileInput" accept=".xlsx">
+            <button type="submit">Convert</button>
+        </form>
+        <div id="message"></div>
+    </main>
+    <footer>
+        Designed by Smith Ringtho
+    </footer>
+    
+    <script src="static/main.js"></script>
+</body>
+</html>
